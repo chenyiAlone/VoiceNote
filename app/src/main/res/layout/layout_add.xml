@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chenyialone.voicewritet.util.CustomToolBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tool:context="com.chenyialone.voicewritet.AddActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:left_btn_visible="true"
+    app:left_btn_src="@drawable/editor"
+    app:title_visible="true"
+    app:title_text="标题"
+    app:right_btn_visible="true"
+    app:right_btn_src="@drawable/speak">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:hint="标题..." />
+
+        <EditText
+            android:id="@+id/editText"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:hint="正文..." />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bg_toolbar"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/imageButton_recording"
+                android:background="@drawable/recording"
+                android:layout_width="30dp"
+                android:layout_height="30.5dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_stop"
+                android:background="@drawable/stop"
+                android:visibility="gone"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</com.chenyialone.voicewritet.util.CustomToolBar>
